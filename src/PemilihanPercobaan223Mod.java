@@ -14,29 +14,31 @@ public class PemilihanPercobaan223Mod {
 
         float total = (uas * 0.4F) + (uts * 0.3F) + (kuis * 0.1F) + (tugas * 0.2F);
         String message = total < 65 ? "Remidi" : "Tidak remidi";
-        System.out.println("Nilai akhir ="+ total + " sehingga " + message);
+         String grade;
         if (80<total && total<= 100) {
-            System.out.println("A");
+            grade = "A";
         }
         else if (73<total && total<= 80) {
-             System.out.println("B+");
+             grade ="B+";
         }
         else if (65<total && total<=73){
-             System.out.println("B");
+             grade = "B";
         }
         else if (60<total && total<=65){
-             System.out.println("C+");
+            grade = "C+";
         }
         else if (50<total && total<=60){
-             System.out.println("C");
+             grade = "C";
         }
         else if (39<total && total<=50){
-             System.out.println("D");
+             grade = "D";
         }
         else{
-             System.out.println("E");
+            grade = "E";
         }
         input23.close();
-
+System.out.println("Nilai akhir ="+ total + " atau " + grade + " sehingga " + message);
     }
+        
+       
 }
